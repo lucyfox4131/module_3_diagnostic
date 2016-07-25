@@ -6,7 +6,7 @@ describe NrelService do
       search = NrelService.new
       stations = search.stations_by_zip(80203)
 
-      expect(stations.count).to eq(10)
+      expect(stations['fuel_stations'].count).to eq(10)
     end
   end
 end
