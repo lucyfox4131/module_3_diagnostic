@@ -14,9 +14,20 @@ gem "less-rails"
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry'
+  gem 'rspec-rails', '~> 3.5'  
+  gem 'factory_girl'
+  gem 'faraday'
+  gem 'figaro'
+  gem 'capybara'
+  gem 'launchy'
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
 end
-
