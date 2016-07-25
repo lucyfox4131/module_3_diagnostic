@@ -1,14 +1,1 @@
-<% if @stations %>
-  <div class="container">
-    <div class="col-md-4">
-    <% @stations.each do |station| %>
-      <h3>Name: <%= station.station_name %></h3>
-      <p>
-      Street Address: <%=  %>
-      </p>
-    <% end %>
-    </div>
-  </div>
-  <% else %>
-  <h1>Search Stations Near You by ZipCode Above</h1>
-<% end %>
+<h1>Search Stations Near You by ZipCode Above</h1>
