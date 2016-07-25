@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-md-4">
+  <% @stations.each do |station| %>
+    <h3>Name: <%= station.station_name %></h3>
+      <ul>
+        <li>Street Address: <%= station.address %></li>
+        <li>Distance: <%= station.distance %></li>
+        <li>Access Times: <%= station.access_days_time %></li>
+        <li>Fuel Types: <%= station.fuel_types %></li>
+      </ul>
+    <br>
+  <% end %>
+  </div>
+</div>
+<% else %>
